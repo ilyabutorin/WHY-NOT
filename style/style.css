@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.logo h1 {
+    animation: slide 2s ease-in-out infinite;
+}
+
+.profile-logo {
+    width: 35px;
+    height: auto;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.navigation li {
+    font-size: 18px;
+    /* Начальный размер текста */
+    transition: transform 0.4s ease-in-out;
+    /* Плавный переход масштаба */
+}
+
+.navigation li:hover {
+    transform: scale(1.15);
+    /* Увеличение размера при наведении */
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+}
+
+
+#services {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#services h2 {
+    margin: 40px 0;
+    font-size: 48px;
+}
+
+#services .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: 400px;
+    gap: 30px;
+}
+
+#services .card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#services .card-img {
+    background-image: url('../media/music-icon.jpg');
+    background-size: cover;
+    padding: 40px;
+    height: 350px;
+}
+
+#services .card-name p {
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+} 
+
+#services .card-name a {
+    text-decoration: none;
+}
+
+#services .card-img:hover {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.5),
+            rgba(30, 30, 30, 0.5)), url('../media/music-icon.jpg');
+}
+
+
+
+#stay-with-us {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#stay-with-us h1 {
+    font-size: 36px;
+}
+
+#stay-with-us h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#stay-with-us p {
+    font-size: 18px;
+}
+
+.stay-with-us-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stay-with-us-block form {
+    display: flex;
+    gap: 20px;
+}
+
+.stay-with-us-block form input {
+    height: 40px;
+    width: 250px;
+    text-align: center;
+
+}
+
+.stay-with-us-block form input {
+    transition: transform 0.4s ease-in-out;
+}
+
+.stay-with-us-block form input:hover {
+    transform: scale(1.1);
+}
+
+
+.stay-with-us-block form button {
+    height: 40px;
+    width: 100px;
+    transition: transform 0.9s ease-in-out
+}
+
+.stay-with-us-block form button:hover {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.5),
+            rgba(30, 30, 30, 0.5))
+}
+
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.footer-left h2 {
+    transition: transform 0.4s ease-in-out;
+}
+
+.footer-left h2:hover {
+    transform: scale(1.1);
+}
+
+.shadow-text{
+    color: #080808; /* Цвет  текста */
+    font-size: 24px; /* Размер  текста */
+    font-weight: bold;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+  .shadow-text:hover{
+    color: #f7d023; /* Меняем цвет текста */
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+  }
